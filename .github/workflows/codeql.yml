@@ -1,0 +1,13 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '37 18 * * 3'
+
+jobs:
+  analyze:
+    uses: JaCraig/Centralized-Workflows/.github/workflows/codeql.yml@main
