@@ -1,10 +1,7 @@
 ﻿namespace TestApp
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        private static void Main(string[] args) => Console.WriteLine("Hello, World! A");
     }
 }
