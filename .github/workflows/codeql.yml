@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '37 18 * * 3'
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   analyze:
     uses: JaCraig/Centralized-Workflows/.github/workflows/codeql.yml@main
