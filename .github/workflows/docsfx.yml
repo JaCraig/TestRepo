@@ -4,6 +4,9 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+
 jobs:
   publish-docs:
     uses: JaCraig/Centralized-Workflows/.github/workflows/docsfx.yml@main
